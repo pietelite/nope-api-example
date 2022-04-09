@@ -15,7 +15,7 @@ repositories {
 
 dependencies {
     implementation("me.pietelite.nope:common-api:BETA-1.1")
-    implementation("me.pietelite.nope:sponge-api:BETA-1.0")
+    implementation("me.pietelite.nope:sponge-api:BETA-1.1")
 }
 
 sponge {
