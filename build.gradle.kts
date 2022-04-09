@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation("me.pietelite.nope:common-api:BETA-1.1")
+    implementation("me.pietelite.nope:sponge-api:BETA-1.0")
 }
 
 sponge {
