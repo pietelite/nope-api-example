@@ -1,4 +1,4 @@
-package com.pietersvenson.nopeapiexamplesponge;
+package me.pietelite.nopeapiexamplesponge;
 
 import com.google.inject.Inject;
 import me.pietelite.nope.common.api.NopeServiceProvider;
