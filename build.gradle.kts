@@ -6,7 +6,7 @@ plugins {
     id("org.spongepowered.gradle.plugin") version "2.0.0"
 }
 
-group = "com.pietersvenson"
+group = "me.pietelite"
 version = "0.0"
 
 repositories {
@@ -14,7 +14,8 @@ repositories {
 }
 
 dependencies {
-    implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
+    implementation("me.pietelite.nope:common-api:BETA-1.1")
+    implementation("me.pietelite.nope:sponge-api:BETA-1.1")
 }
 
 sponge {
@@ -26,22 +27,16 @@ sponge {
     }
     plugin("nope-addon") {
         displayName("Nope Addon")
-        entrypoint("com.pietersvenson.nopeaddon.NopeAddon")
+        entrypoint("me.pietelite.nopeapiexamplesponge.NopeApiExampleSponge")
         description("An example addon to Nope")
         links {
-            homepage("https://github.com/pietelite/nopeaddon")
-            // source("https://spongepowered.org/source")
-            // issues("https://spongepowered.org/issues")
+            homepage("https://github.com/pietelite/nope-api-example-sponge")
         }
         contributor("PietElite") {
             description("Author")
         }
-        dependency("spongeapi") {
-            loadOrder(PluginDependency.LoadOrder.AFTER)
-            optional(false)
-        }
         dependency("nope") {
-            version("1.0.0")
+            version("BETA-1.1.0")
             loadOrder(PluginDependency.LoadOrder.AFTER)
             optional(false)
         }
